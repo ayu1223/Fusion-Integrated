@@ -3,8 +3,10 @@ from .models import LeaveRequest
 from .serializers import LeaveRequestSerializer
 
 class LeaveRequestListView(generics.ListAPIView):
-    queryset = LeaveRequest.objects.filter(user=self.request.user)
     serializer_class = LeaveRequestSerializer
+
+    def get_queryset(self):
+        return LeaveRequest.objects.filter(user=self.request.user)
 
 class LeaveRequestCreateView(generics.CreateAPIView):
     serializer_class = LeaveRequestSerializer
