@@ -1,7 +1,7 @@
 from django.test import TestCase
 from rest_framework.test import APIClient
-from modules/directory.models import UserRef
-from modules/elm.models import LeaveRequest
+from modules.directory.models import UserRef
+from modules.elm.models import LeaveRequest
 
 class LeaveRequestTest(TestCase):
     def setUp(self):
