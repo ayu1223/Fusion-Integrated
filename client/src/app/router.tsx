@@ -127,5 +127,7 @@ export function AppRoutes() {
       ),
       children: authedChildren,
     },
+    { path: "leave-requests", element: <LeaveRequestList /> },
+    { path: "leave-requests/create", element: <LeaveRequestForm /> },
   ]);
 }
