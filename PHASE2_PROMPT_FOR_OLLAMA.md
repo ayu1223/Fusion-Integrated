@@ -11,18 +11,18 @@ make it runnable inside the Fusion base code.
 
 ## Repository layout (absolute paths)
 
-- Repo root: `/home/atharva/Documents/Fusion/Fusion-Integrated` — all work happens HERE, nowhere else.
-- The ELM module: `/home/atharva/Documents/Fusion/Fusion-Integrated/modules/leave/`
+- Repo root: `/home/ayush/Documents/Fusion/Fusion-Integrated` — all work happens HERE, nowhere else.
+- The ELM module: `/home/ayush/Documents/Fusion/Fusion-Integrated/modules/leave/`
   - `domain/` — pure rule logic, no Django: `categories.py`, `eligibility.py`, `state_machine.py`, `guards.py`, `routing.py`
   - `services/` — transactions/orchestration: `applications.py`, `decisions.py`, `year_end.py`, `sla.py`, `calendar.py`, `workflow.py`, `accounts.py`, `notifications.py`, `offline.py`
   - `selectors/` — query/scoping: `leave.py`, `balances.py`
   - `api/` — `views.py`, `serializers.py` (**no `urls.py` yet**)
   - `models.py`, `registry.py`, `contracts.py`, `apps.py`
-- A reference module that is fully wired and correct: `/home/atharva/Documents/Fusion/Fusion-Integrated/modules/placement/` (copy its patterns, especially `api/urls.py`, `migrations/`, `tests/`).
+- A reference module that is fully wired and correct: `/home/ayush/Documents/Fusion/Fusion-Integrated/modules/placement/` (copy its patterns, especially `api/urls.py`, `migrations/`, `tests/`).
 - Django wiring files:
-  - `/home/atharva/Documents/Fusion/Fusion-Integrated/config/settings/base.py` (`DOMAIN_MODULES` list, line ~91)
-  - `/home/atharva/Documents/Fusion/Fusion-Integrated/config/urls.py`
-- Module authoring rules: `/home/atharva/Documents/Fusion/Fusion-Integrated/docs/03-platform/module-authoring-guide.md` and `platform-structure.md`
+  - `/home/ayush/Documents/Fusion/Fusion-Integrated/config/settings/base.py` (`DOMAIN_MODULES` list, line ~91)
+  - `/home/ayush/Documents/Fusion/Fusion-Integrated/config/urls.py`
+- Module authoring rules: `/home/ayush/Documents/Fusion/Fusion-Integrated/docs/03-platform/module-authoring-guide.md` and `platform-structure.md`
 - ELM specification (plain-text extracts, read these):
   - `01_ELM_Problem_Statement_v1.4_FINAL.txt` — overview
   - `02_ELM_Functional_Requirement_Specification_v1.5_FINAL.txt` — FRs

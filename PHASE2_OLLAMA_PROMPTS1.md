@@ -24,7 +24,7 @@ corrected.
 ### Prompt sent
 
 ```text
-Repo: /home/atharva/Documents/Fusion/Fusion-Integrated (Django 4 + DRF).
+Repo: /home/ayush/Documents/Fusion/Fusion-Integrated (Django 4 + DRF).
 
 The ELM leave module at modules/leave/ is NOT wired into Django. Make exactly 3 edits.
 
